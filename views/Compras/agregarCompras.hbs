@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Register - SB Admin</title>
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="sb-nav-fixed">
+        {{>navbar}}
+          <div id="layoutSidenav">
+            {{>sidebar}}
+            <div id="layoutSidenav_content">
+                <main>
+                  <div class="container-fluid px-4">
+                    <div class="d-flex justify-content-between">
+                      <h1 class="mt-4">Agregar Compra</h1>
+                    </div>
+                    <div class="card shadow-lg border-0 rounded-lg my-3">
+                        
+                            <form>
+                              <div class="card-header">
+                              <div class="row mb-3">
+                                <div class="col-md-6">
+                                  <div class="form-floating mb-3 mb-md-0">
+                                    <div class="form">
+                                      <label for="" class="form-label">Nro Recibo</label>
+                                        <input class="form-control" id="inputFirstName" type="text" required/>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3 mb-md-0">
+                                        <div class="form">
+                                            <label class="form-label">Fecha compra</label>
+                                            <input class="form-control" id="inputFirstName" type="date" placeholder="Fecha compra" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3 mb-md-0">
+                                            <div class="form">
+                                                <select class="form-select">
+                                                  <option selected>Insumo</option>
+                                                  <option value="1">Harina</option>
+                                                  <option value="2">Hojaldre</option>
+                                                  <option value="3">Azucar</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3 mb-md-0">
+                                            <div class="form">
+                                                <input class="form-control" id="inputFirstName" type="number" placeholder="Cantidad" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3 mb-md-0">
+                                            <div class="form">
+                                                <select class="form-select">
+                                                  <option selected>Medida</option>
+                                                  <option value="1">Unidad</option>
+                                                  <option value="2">Kilo</option>
+                                                  <option value="3">Libra</option>
+                                                  <option value="4">Gramos</option>
+                                                  <option value="5">Litros</option>
+                                                  <option value="6">Mililitros</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3 mb-md-0">
+                                            <div class="form">
+                                                <input class="form-control" id="inputFirstName" type="number" placeholder="Precio unitario" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3 mb-md-0">
+                                            <div class="form">
+                                                <button class="btn btn-primary">Agregar Producto</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Medida</th>
+                                        <th scope="col">Precio unitario</th>
+                                        <th scope="col">Subtotal</th>
+                                        <th scope="col">Funcion</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th>Harina</th>
+                                        <td>25</td>
+                                        <td>libra</td>
+                                        <td>2500</td>
+                                        <td>62500</td>
+                                        <td><button class="btn btn-danger">Eliminar</button></td>
+                                      </tr>
+                                      <tr>
+                                        <th>Hojaldre</th>
+                                        <td>4</td>
+                                        <td>libra</td>
+                                        <td>7500</td>
+                                        <td>30000</td>
+                                        <td><button class="btn btn-danger">Eliminar</button></td>
+                                      </tr>
+                                      <tr>
+                                        <th>Azucar</th>
+                                        <td>10</td>
+                                        <td>libra</td>
+                                        <td>2000</td>
+                                        <td>20000</td>
+                                        <td><button class="btn btn-danger">Eliminar</button></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3 mb-md-0">
+                                            <div class="form">
+                                                <input class="form-control" id="inputFirstName" type="number" placeholder="Total pagado" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3 mb-md-0">
+                                            <div class="form">
+                                                <input class="form-control" id="inputFirstName" type="text" placeholder="Descripción" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="mt-4 mb-0">
+                                        <div class="d-grid"><button class="btn btn-primary btn-block" onclick="alertGuardar()" type="button">Guardar</button></div>
+                                    </div>
+                                  </div>
+                            </form>
+                        
+                        <div class="card-footer text-center py-3">
+                            <a href="/buys" class="btn btn-primary">Regresar</a>
+                        </div>
+                    </div>
+                    </div>
+            </main>
+          </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="../js/scripts.js"></script>
+        <script src="../js/compras.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </body>
+</html>
